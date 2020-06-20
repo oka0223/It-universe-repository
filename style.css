@@ -1,0 +1,113 @@
+body {
+  width: 820px;
+	height: auto;
+	border: 2px solid blue;
+	background-color: #F5F06E;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template: 
+  "header header" 
+  "left right" 
+  "footer footer"30px;
+  
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+header {
+  grid-area: header;
+  width: 800px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	/* height: 100px; */
+	background-image: url(images/FLW057.jpg);
+	border: 2px dotted green;
+}
+nav {
+  grid-area: left;
+  width: 150px;
+	height: auto;
+	line-height: 2em;
+	font-size: 20px;
+	margin-left: 10px;
+}
+ 
+main {
+  grid-area: right;
+  width: 630px;
+	height: auto;
+	/* float: right; */
+	border: 2px dotted green;
+	/* margin-right: 10px; */
+	line-height: 1.5em;
+	text-indent: 0;
+}
+footer {
+  grid-area: footer;
+  width: 820px;
+	height: 30px;
+	text-align: center;
+	/* padding-top: 10px; */
+	font-size: 18px;
+	/* clear: both; */
+	border-top: 2px solid blue;
+	padding: 0px;
+}
+h1 {
+	color: orange;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 10px;
+	text-shadow: 5px 5px 5px black;
+}
+h2 {
+	color: #6AF507;
+	padding-left: 20px;
+	padding-top: 10px;
+	text-shadow: 2px 2px 2px black;
+}  
+h4 {
+	text-align: right;
+}
+li {
+	background-image: url(images/botan-1.jpg);
+	text-align: center;
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	display: inline-block;
+	width: 150px;
+}
+main p {
+	margin-left: 10px;
+	margin-top: 10px;
+
+}
+a:hover {
+	background-image: url(images/botan-2.jpg);
+	color: red;
+}
+h3 {
+	color: #FF5D79;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 20px;
+	text-shadow: 2px 2px white;
+}
+
+
+@media screen and (max-width: 800px) {
+body {
+  grid-template: 
+  "header" 100px
+  "left"
+  "right" 
+  "footer" 30px;
+}
+
+}
